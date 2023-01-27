@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  max-width: 1280px;
+  margin: 50px auto;
+  padding: 0px 30px;
+
+  button {
+    height: 50px;
+    width: 50px;
+    background: none;
+    outline: none;
+    border: none;
+
+    i {
+      transition: color 0.2s;
+    }
+  }
+
+  ul {
+    margin: 0px 0px 0px 20px;
+  }
+
+  ul li {
+    margin: 10px 0px;
+  }
+
+  h2,
+  h3,
+  h4 {
+    margin: 25px 0px;
+  }
+
+  h2 {
+    font-size: 4rem;
+    font-weight: 0;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .relevantWords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .phonetic {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    button{
+      i {
+        transition: color .2s;
+        color: var(--audio-icon);
+        &:hover{
+          color:var(--a-hover-color);
+        }
+      }
+    }
+  }
+}

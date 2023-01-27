@@ -1,0 +1,117 @@
+:root {
+  font-size: 16px;
+  line-height: 24px;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  transition: .2s;
+}
+
+body.light {
+  --background-color: #fff;
+  --text-color: #000000de;
+  --a-color: #646cff;
+  --a-hover-color: #f253d0;
+  --button-bg-color: #eeecec;
+  --button-bg-hover-color: #5a5959;
+  --input-bg-color: #eeecec;
+  --h4-color: #7a7171;
+  --i-color: #646cff;
+  --audio-icon: #646cff;
+  --default-book-hover: #646cff;
+}
+
+body.dark {
+  --background-color: #181818de;
+  --text-color: rgb(245, 245, 245);
+  --a-color: #bb5bc4;
+  --a-hover-color: #f253d0;
+  --button-bg-color: #444444;
+  --button-bg-hover-color: #f253d0;
+  --input-bg-color: #444444;
+  --h4-color: #c4bbac;
+  --i-color: #fff;
+  --default-book-hover: #fff;
+  --audio-icon: #bb5bc4;
+}
+
+a {
+  cursor: pointer;
+  color: var(--a-color);
+  text-decoration: inherit;
+  transition: .2s;
+}
+
+a:hover {
+  color: var(--a-hover-color);
+}
+
+h2{
+  font-style: italic;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+input {
+  background-color: var(--input-bg-color);
+  color: var(--text-color);
+}
+
+button {
+  background-color: var(--button-bg-color);
+  transition: color .2s;
+  cursor: pointer;
+}
+
+button:hover {
+  color: var(--button-bg-hover-color);
+}
+
+h4 {
+  color: var(--h4-color);
+  font-weight: 400;
+}
+
+i {
+  color: var(--i-color);
+  transition: color .2s;
+}
+
+i:hover {
+  color: var(--a-hover-color);
+}
+
+ul li {
+  color: var(--a-color);
+}
+
+span {
+  color: var(--text-color);
+}
+
+.fa-book:hover {
+  color: var(--a-color);
+}
+
+@media (min-width: 648px) and (max-width: 1280px) {
+  :root {
+    font-size: 21px;
+  }
+}

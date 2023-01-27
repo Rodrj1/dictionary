@@ -1,0 +1,74 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  height: 100px;
+  width: 80%;
+  gap: 20px;
+  padding: 10px;
+
+  i {
+    color: var(--default-book-hover);
+    &:hover{
+      color: var(--default-book-hover);
+    }
+  }
+
+  button {
+    height: 50px;
+    width: 100px;
+    background-color: none;
+    border: none;
+  }
+
+  ul {
+    display: flex;
+    justify-content: flex-start;
+
+    li {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        transition: 0.4s;
+        color: var(--text-color);
+
+        &:hover {
+          transform: scaleX(1.11);
+        }
+      }
+    }
+
+    .placeholderFont {
+      font-weight: bold;
+    }
+
+    .dropdown {
+      position: absolute;
+      color: #000;
+      top: 58px;
+      width: auto;
+      padding: 1rem;
+      overflow: hidden;
+      transform: translateX(-23%);
+      transition: 0.2s;
+
+      .item {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+          width: 130px;
+          height: 50px;
+          padding: 0px 5px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
