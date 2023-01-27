@@ -2,6 +2,8 @@
 
 A website that allows you to search for words that are included in the Dictionary API. You can choose between three fonts, Arial, Courier, and Libre Baskerville(default), and light and dark mode. The website uses by default your prefered color scheme.
 
+URL: https://dictionarymdp.netlify.app/
+
 ## Searcher
 
 Just type a word in.
